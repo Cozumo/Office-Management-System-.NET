@@ -1,0 +1,300 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{986E4EE3-2D49-4083-B3F9-C8A2ECB4035A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>OOP_Final_Project</RootNamespace>
+    <AssemblyName>OOP Final Project</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes.cs" />
+    <Compile Include="FormsAll\AbsentEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsAll\AbsentEmployee.Designer.cs">
+      <DependentUpon>AbsentEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsAll\ADDEVENT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsAll\ADDEVENT.Designer.cs">
+      <DependentUpon>ADDEVENT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsAll\ADMIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsAll\ADMIN.Designer.cs">
+      <DependentUpon>ADMIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsAll\ADMINFUNCTION.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsAll\ADMINFUNCTION.Designer.cs">
+      <DependentUpon>ADMINFUNCTION.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsAll\AttendenceEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsAll\AttendenceEmployee.Designer.cs">
+      <DependentUpon>AttendenceEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsAll\CONTACT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsAll\CONTACT.Designer.cs">
+      <DependentUpon>CONTACT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsAll\DEPARTMENT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsAll\DEPARTMENT.Designer.cs">
+      <DependentUpon>DEPARTMENT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsAll\DISPLAYEVENT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsAll\DISPLAYEVENT.Designer.cs">
+      <DependentUpon>DISPLAYEVENT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsAll\DISPLAYLEAVE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsAll\DISPLAYLEAVE.Designer.cs">
+      <DependentUpon>DISPLAYLEAVE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsAll\EMPLOYEE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsAll\EMPLOYEE.Designer.cs">
+      <DependentUpon>EMPLOYEE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsAll\EMPLOYEEFUNCTION.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsAll\EMPLOYEEFUNCTION.Designer.cs">
+      <DependentUpon>EMPLOYEEFUNCTION.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsAll\EVENTMAIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsAll\EVENTMAIN.Designer.cs">
+      <DependentUpon>EVENTMAIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsAll\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsAll\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsAll\LEAVE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsAll\LEAVE.Designer.cs">
+      <DependentUpon>LEAVE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsAll\listofemployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsAll\listofemployee.Designer.cs">
+      <DependentUpon>listofemployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsAll\LOGIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsAll\LOGIN.Designer.cs">
+      <DependentUpon>LOGIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsAll\LoginAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsAll\LoginAdmin.Designer.cs">
+      <DependentUpon>LoginAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsAll\NEWEMPLOYEE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsAll\NEWEMPLOYEE.Designer.cs">
+      <DependentUpon>NEWEMPLOYEE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsAll\PayCheck.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsAll\PayCheck.Designer.cs">
+      <DependentUpon>PayCheck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsAll\PAYEMP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsAll\PAYEMP.Designer.cs">
+      <DependentUpon>PAYEMP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsAll\PresentEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsAll\PresentEmployee.Designer.cs">
+      <DependentUpon>PresentEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsAll\WorkDisplay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsAll\WorkDisplay.Designer.cs">
+      <DependentUpon>WorkDisplay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="FormsAll\REMOVEEMPLOYEE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsAll\REMOVEEMPLOYEE.Designer.cs">
+      <DependentUpon>REMOVEEMPLOYEE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsAll\REMOVEEVENT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsAll\REMOVEEVENT.Designer.cs">
+      <DependentUpon>REMOVEEVENT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsAll\WORK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsAll\WORK.Designer.cs">
+      <DependentUpon>WORK.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FormsAll\AbsentEmployee.resx">
+      <DependentUpon>AbsentEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsAll\ADDEVENT.resx">
+      <DependentUpon>ADDEVENT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsAll\ADMIN.resx">
+      <DependentUpon>ADMIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsAll\ADMINFUNCTION.resx">
+      <DependentUpon>ADMINFUNCTION.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsAll\AttendenceEmployee.resx">
+      <DependentUpon>AttendenceEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsAll\CONTACT.resx">
+      <DependentUpon>CONTACT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsAll\DEPARTMENT.resx">
+      <DependentUpon>DEPARTMENT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsAll\DISPLAYEVENT.resx">
+      <DependentUpon>DISPLAYEVENT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsAll\DISPLAYLEAVE.resx">
+      <DependentUpon>DISPLAYLEAVE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsAll\EMPLOYEE.resx">
+      <DependentUpon>EMPLOYEE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsAll\EMPLOYEEFUNCTION.resx">
+      <DependentUpon>EMPLOYEEFUNCTION.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsAll\EVENTMAIN.resx">
+      <DependentUpon>EVENTMAIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsAll\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsAll\LEAVE.resx">
+      <DependentUpon>LEAVE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsAll\listofemployee.resx">
+      <DependentUpon>listofemployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsAll\LOGIN.resx">
+      <DependentUpon>LOGIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsAll\LoginAdmin.resx">
+      <DependentUpon>LoginAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsAll\NEWEMPLOYEE.resx">
+      <DependentUpon>NEWEMPLOYEE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsAll\PayCheck.resx">
+      <DependentUpon>PayCheck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsAll\PAYEMP.resx">
+      <DependentUpon>PAYEMP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsAll\PresentEmployee.resx">
+      <DependentUpon>PresentEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsAll\WorkDisplay.resx">
+      <DependentUpon>WorkDisplay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FormsAll\REMOVEEMPLOYEE.resx">
+      <DependentUpon>REMOVEEMPLOYEE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsAll\REMOVEEVENT.resx">
+      <DependentUpon>REMOVEEVENT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsAll\WORK.resx">
+      <DependentUpon>WORK.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
